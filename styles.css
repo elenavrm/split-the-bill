@@ -1,0 +1,140 @@
+body {
+    background-image: url("https://images.unsplash.com/photo-1531970227416-f0cddeb1f748?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #8c8f8a;
+}
+
+#container {
+    background-color: rgba(39, 7, 115, 0.7);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 725px;
+    border-radius: 40px;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    padding: 20px;
+    margin: 20px;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    color: #ffff;
+    align-self: center;
+}
+
+input {
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+    border-radius: 8px;
+
+}
+
+#addTip {
+    background-color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #1e0854;
+}
+
+#btn {
+    background-color: #e4f3ff;
+    color: #1e0854;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+#tip{
+    font-family: 'Lato', sans-serif;
+    display: none;
+}
+
+#showTotalAmountToPay {
+    display: flex;
+}
+
+#billSplit, #totalTip, #totalAmount {
+    font-family: 'Lato', sans-serif;
+    color: #1e0854;
+    background-color: #e4f3ff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #1e0854;
+}
+
+@media all and (max-width: 800px) {
+h1 {
+    margin: 0 auto;
+}
+
+#container {
+    flex-direction: row;
+    width: 450px;
+    height: 625px;
+}
+}
+
+@media all and (max-width: 700px) {
+    #billSplit, #totalTip, #totalAmount {
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    body{
+        background: url('https://images.unsplash.com/photo-1531969179221-3946e6b5a5e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+        background-position: center;
+    }
+    
+    #container {
+        margin: 0 auto;
+        justify-content: center;
+        text-align: center;
+        width: 400px;
+        height: 600px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    #billSplit, #totalTip, #totalAmount {
+        margin: 5px;
+        padding: 5px;
+    }
+}
+
+@media all and (max-width: 450px) {
+    body{
+        background: url('https://images.unsplash.com/photo-1531969179221-3946e6b5a5e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+        background-position: center;
+    }
+    
+    #container {
+        width: 350px;
+        height: 750px;
+    }
+
+    #showTotalAmountToPay {
+        flex-direction:column;
+        width: 50%;
+        margin: 0 auto;
+    }
+}
