@@ -1,4 +1,4 @@
-# SPlit the bill web app
+# Split the bill web app
 
 <img src='https://github.com/elenavrm/split-the-bill/blob/main/split.png?raw=true' alt='demo' width='550px'>
 
